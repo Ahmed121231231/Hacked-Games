@@ -32,12 +32,14 @@ footer {
     padding: 20px 0; /* تم تعديل القيمة لتوسيط أفضل */
 }
 
-div {
+.apps{
     margin: 10px;
     width: auto;
     height: auto;
     background-color: white;
     border-radius: 10px;
+    display: grid;
+    grid-template-rows: 220px 220px;
 }
 
 .app1 {
@@ -51,20 +53,34 @@ div {
     background-position: center;
     background-size: cover;
     /* تم التغيير إلى 'inline-block' لتطبيق الطول والعرض */
-    display: inline-block; 
+    display: inline-block;
+    border-radius: 10px;
+    border: rgba(255, 255, 255, 0.795)255, 255, 255, 0.767), solid 10px;
 }
 
 .app2 {
     width: 186px;
     height: 200px;
     background-image: url(sub.jpg);
-    margin-right: 300px;
     /* تم التغيير إلى 'inline-block' لتطبيق الطول والعرض */
     display: inline-block;
     /* تمت إضافة الخصائص التالية لتظهر الخلفية بشكل صحيح */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    border-radius: 10px;
+    border: rgba(255, 255, 255, 0.795)255, 255, 255, 0.767) solid 10px;
+}
+.app3{
+    width: 186px;
+    height: 200px;
+    display: inline-block;
+    background-image: url(pupg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    border: rgba(255, 255, 255, 0.795)255, 255, 255, 0.767) solid 10px;
 }
 .logo{
     width: 100px;
@@ -75,5 +91,6 @@ div {
     background-size: cover;
     position: fixed;
     border-radius: 100%;
+
 
 }
