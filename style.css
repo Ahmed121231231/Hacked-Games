@@ -1,115 +1,79 @@
+header {
+    width: auto;
+    /* تم حذف 'header: 40%;' لأنه خاصية غير صحيحة */
+    background-color: #333;
+    margin: 0;
+    padding: 60px 0;
+}
+
+header > h1 {
+    color: white;
+    text-align: center;
+    margin: auto;
+    /* تم تحسين قائمة الخطوط لإزالة التكرار */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
-    background-color:  rgb(211, 210, 210);
-    /* من الأفضل إزالة الهوامش الافتراضية للمتصفح */
     margin: 0;
     padding: 0;
-  }
-  
-  .bg {
-    max-width: 1500px;
-    height: 500px;
-    background-image: url(bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    box-shadow: 1px 5px 10px 5px black;
-    position: relative;
-    /* لتوسيط هذا الصندوق في الصفحة أفقياً */
-    margin: 0 auto;
-    z-index: 1;
-  }
-  
-  .text {
-    color: #EAEFFC;
-    text-align: center;
-  }
-  
-  .down {
-    width: 300px;
-    height: 50px;
-    background-color:  white;
-    /* لون الإطار نفس لون الخلفية، قد يكون غير مرئي */
-    border: solid 10px ;
-    text-align: center;
-    
-    /* الطريقة الصحيحة للتوسيط المطلق */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-    text-decoration: none;
-    color: white;
-    font-size: 30px;
-    
-  }
- .te{
-     position: absolute;
-     color: black;
-     font-size: 30px;
-     text-decoration: none;
-     transform: translate(-50%, -50%);
-     top: 50%;
-     left: 50%;
+    background-color: rgb(211, 210, 210);
+}
 
-}
-.te:hover{
-    color: green;
-}
-.logo{
-    width: 80px;
-    height: 80px;
-    background-color: green;
-    border-radius: 100%;
-    background-image: url(logo.png);
-    background-size: cover;
-    background-position: center;
+footer {
     position: fixed;
-    z-index: 5;
+    width: 100%;
+    /* تم حذف 'height' لتجنب التعارض مع 'padding' */
+    background-color: #333;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    padding: 20px 0; /* تم تعديل القيمة لتوسيط أفضل */
 }
-.app1{
+
+div {
     margin: 10px;
-    padding: 20px 10px;
-    width: 150px;
-    height: 150px;
-    background-color: white;
-    border-radius: 10px;
-    word-wrap: break-word;
-    background-image: url(EL.png);
-}
-html {
-    scroll-behavior: smooth;
-    
-}
-.intro{
-    margin: 4px;
-    padding: 10px;
     width: auto;
     height: auto;
     background-color: white;
     border-radius: 10px;
-    text-align: center;
 }
-.apps{
-    border-radius: 10px;
-    position: relative;
-    width: auto;
-    height: 300px;
-    background-color: whitesmoke;
-    padding: 10px;
-    margin: 10px;
 
+.app1 {
+    width: 186px;
+    height: 220px;
+    background-image: url(EL.png);
+    background-repeat: no-repeat;
+    padding: 0px;
+    margin: 0px;
+    background-color: chartreuse;
+    background-position: center;
+    background-size: cover;
+    /* تم التغيير إلى 'inline-block' لتطبيق الطول والعرض */
+    display: inline-block; 
 }
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+
+.app2 {
+    width: 186px;
+    height: 200px;
+    background-image: url(sub.jpg);
+    margin-right: 300px;
+    /* تم التغيير إلى 'inline-block' لتطبيق الطول والعرض */
+    display: inline-block;
+    /* تمت إضافة الخصائص التالية لتظهر الخلفية بشكل صحيح */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     position: fixed;
-    width: 100%;
-    height: 30px;
-    bottom: 0;
-}
-body>.d>.app1>h3{
-    text-decoration: none;
+    border-radius: 100%;
+
 }
